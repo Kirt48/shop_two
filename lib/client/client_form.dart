@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:shop/client/client.model.dart';
 import 'package:shop/client/client_list.dart';
@@ -65,7 +64,7 @@ class _ClientFormState extends State<ClientForm> {
                                   ),
                                 ),
                                 Image.network(
-                                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnpPiXaX_B-pX89wUuGa3dkHjm_P2Nt6s9w"),
+                                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNLrZfBjzT2DNzQYQi1pLeUlJS_URIl4UTvw&usqp=CAU"),
                               ],
                             )),
                         const Divider(),
@@ -80,7 +79,7 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.abc),
+                                icon: Icon(Icons.person),
                                 label: Text("Ingrese el nombre"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
@@ -102,7 +101,7 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.price_change),
+                                icon: Icon(Icons.abc),
                                 label: Text("Ingrese el apellido"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
@@ -124,18 +123,18 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.price_change),
+                                icon: Icon(Icons.email),
                                 label: Text("Ingrese el correo"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return "Ingrese un correo electronico";
-                              } 
+                              }
                               return null;
                             },
                           ),
                         ),
-                        
+
                         // phone
                         Padding(
                           padding: const EdgeInsets.all(15),
@@ -146,18 +145,18 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.price_change),
+                                icon: Icon(Icons.phone),
                                 label: Text("Ingrese el telefono"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return "Ingrese un telefono";
-                              } 
+                              }
                               return null;
                             },
                           ),
                         ),
-                        
+
                         // ADDRESS
                         Padding(
                           padding: const EdgeInsets.all(15),
@@ -168,7 +167,7 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.price_change),
+                                icon: Icon(Icons.location_city),
                                 label: Text("Ingrese la direccion"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
@@ -180,7 +179,6 @@ class _ClientFormState extends State<ClientForm> {
                           ),
                         ),
 
-
                         //  STATE
                         Padding(
                           padding: const EdgeInsets.all(15),
@@ -191,7 +189,7 @@ class _ClientFormState extends State<ClientForm> {
                                 floatingLabelStyle:
                                     TextStyle(color: Colors.black),
                                 focusColor: Colors.black,
-                                icon: Icon(Icons.price_change),
+                                icon: Icon(Icons.numbers),
                                 label: Text("Ingrese el estado"),
                                 focusedBorder: OutlineInputBorder()),
                             validator: (value) {
